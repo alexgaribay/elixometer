@@ -20,7 +20,7 @@ defmodule Elixometer.Mixfile do
 
   def application do
      [mod: {Elixometer.App, []},
-      applications: [:lager, :exometer_core],
+      applications: [:lager, :exometer_core, :exometer_report_statsd],
       erl_opts: [parse_transform: "lager_transform"],
       env: default_config(Mix.env)
      ]
